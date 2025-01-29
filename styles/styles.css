@@ -118,4 +118,8 @@ body {
     max-width:90%;
     width: 100%;
   }
+
+  .profile-bio {
+    width: 96%;
+  }
 }
