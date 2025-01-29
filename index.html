@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card - Khingz</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
-  <body>
-    <div class="profile-card">
-      <div class="social-links">
-        <a href="#" class="social-icon" data-testid="socialLinks"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon" data-testid="socialLinks"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-icon" data-testid="socialLinks"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="social-icon" data-testid="socialLinks"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="line-divider"></div>
-      <div class="profile-details-container">
-        <img src="./assets/img/image.jpg" data-testid="profilePicture" alt="" srcset="">
-        <h3 class="profile-name" data-testid="fullName">Kingsley Akpan</h3>
-        <p class="profile-job" data-testid="jobTitle">Frontend Developer</p>
-        <div class="dot-divider-container">
-          <div class="dot-divider"></div>
-          <div class="dot-divider"></div>
-          <div class="dot-divider"></div>
-        </div>
-        <p class="profile-bio" data-testid="shortBio">Kingsley Akpan — Frontend Developer skilled in React, TypeScript, and Tailwind CSS. Passionate about crafting fast, responsive, and user-friendly web applications.</p>
-        <div class="profile-data-container">
-          <div class="profile-data-item">
-            <i class="fas fa-envelope"></i>
-            <p data-testid="emailAddress">Kingsley995mr@gmail.com</p>
-          </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Profile Card - Khingz</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/styles.css" />
+	</head>
+	<body>
+		<div class="profile-card">
+			<div class="social-links" data-testid="socialLinks">
+				<a href="https://web.facebook.com/khingz001" class="social-icon" data-testid="facebook"
+					><i class="fab fa-facebook-f"></i
+				></a>
+				<a href="#https://x.com/khingz_a" class="social-icon" data-testid="twitter"
+					><i class="fab fa-twitter"></i
+				></a>
+				<a href="https://www.linkedin.com/in/kingsley-akpan-162838116/" class="social-icon" data-testid="linkedin"
+					><i class="fab fa-linkedin-in"></i
+				></a>
+				<a href="https://github.com/Khingz" class="social-icon" data-testid="github"
+					><i class="fab fa-github"></i
+				></a>
+			</div>
+			<div class="line-divider"></div>
+			<div class="profile-details-container">
+				<figure class="profile-avatar-container">
+					<img
+						src="./assets/img/image.jpg"
+						data-testid="profilePicture"
+						alt=""
+						srcset=""
+					/>
+				</figure>
+				<h3 class="profile-name" data-testid="fullName">Kingsley Akpan</h3>
+				<p class="profile-job" data-testid="jobTitle">Frontend Developer</p>
+				<div class="dot-divider-container">
+					<div class="dot-divider"></div>
+					<div class="dot-divider"></div>
+					<div class="dot-divider"></div>
+				</div>
+				<p class="profile-bio" data-testid="shortBio">
+					Kingsley Akpan — Frontend Developer skilled in React, TypeScript, and
+					Tailwind CSS. Passionate about crafting fast, responsive, and
+					user-friendly web applications.
+				</p>
+				<div class="profile-data-container">
+					<div class="profile-data-item">
+						<i class="fas fa-envelope"></i>
+						<p data-testid="emailAddress">Kingsley995mr@gmail.com</p>
+					</div>
 
-          <div class="profile-data-item">
-            <i class="fas fa-location-dot"></i>
-            <p data-testid="currentLocation" data-testid="currentLocation">Abuja, Nigeria</p>
-          </div>
+					<div class="profile-data-item">
+						<i class="fas fa-location-dot"></i>
+						<p data-testid="currentLocation" data-testid="currentLocation">
+							Abuja, Nigeria
+						</p>
+					</div>
 
-          <div class="profile-data-item">
-            <i class="fas fa-clock"></i>
-            <p id="utc-time" data-testid="currentTimeUTC"></p>
-          </div>
-        </div>
-      </div>
-    </div>
+					<div class="profile-data-item">
+						<i class="fas fa-clock"></i>
+						<p id="utc-time" data-testid="currentTimeUTC"></p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <script src="./js/main.js"></script>
-  </body>
+		<script src="./js/main.js"></script>
+	</body>
 </html>
